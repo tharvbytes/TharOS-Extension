@@ -1,0 +1,58 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 100 100"
+  fill="none"
+>
+  <defs>
+    <linearGradient id="plum" x1="10" y1="5" x2="90" y2="95">
+      <stop offset="0%" stop-color="#A87BD5"/>
+      <stop offset="50%" stop-color="#75439D"/>
+      <stop offset="100%" stop-color="#3D1557"/>
+    </linearGradient>
+
+    <linearGradient id="snow" x1="30" y1="15" x2="70" y2="85">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F0E5FC"/>
+    </linearGradient>
+  </defs>
+
+  <rect
+    x="3"
+    y="3"
+    width="94"
+    height="94"
+    rx="27"
+    fill="url(#plum)"
+  />
+
+  <rect
+    x="9"
+    y="9"
+    width="82"
+    height="82"
+    rx="23"
+    stroke="#FFFFFF"
+    stroke-opacity=".22"
+    stroke-width="1.5"
+  />
+
+  <path
+    d="M25 27H75V38H56V74H44V38H25V27Z"
+    fill="url(#snow)"
+  />
+
+  <path
+    d="M32 18H68"
+    stroke="#FFFFFF"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-opacity=".75"
+  />
+
+  <circle
+    cx="76"
+    cy="76"
+    r="3"
+    fill="#E7D3FF"
+  />
+</svg>

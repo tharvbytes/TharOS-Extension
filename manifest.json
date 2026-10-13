@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "TharOS",
+  "version": "1.0.0",
+  "description": "A royal desktop experience for Firefox.",
+  "permissions": [
+    "tabs",
+    "scripting"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "hello@imtharvesh.me"
+    }
+  }
+}

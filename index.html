@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f4fc">
+  <title>TharOS</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+
+<body>
+  <main id="desktop">
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">T</span>
+        <span class="brand-name">THAR<span>OS</span></span>
+      </div>
+
+      <div class="top-status">
+        <span id="internetDot" class="status-dot"></span>
+        <span id="internetStatus">Connecting</span>
+      </div>
+      
+      <button id="fullscreenButton" class="fullscreen-button"> ⛶ Fullscreen </button>
+
+    </header>
+
+    <section class="workspace">
+      <div class="hero">
+        <p class="eyebrow">YOUR SPACE. YOUR RULES.</p>
+
+        <h1>
+          A new day.<br>
+          <span> A new dimension.</span>
+        </h1>
+
+        <div id="clock">00:00</div>
+        <p id="date"></p>
+      </div>
+
+      <section class="applications">
+        <div class="section-heading">
+          <div>
+            <h2>Applications</h2>
+            <p>Your everyday destinations.</p>
+          </div>
+          <span class="app-count">05 APPS</span>
+        </div>
+
+        <div class="app-grid">
+          <a class="app" href="https://google.com/" title="Google">
+            <div class="app-icon google">
+              <svg viewBox="0 0 48 48" aria-hidden="true">
+                <path fill="#4285F4" d="M43.6 24.5c0-1.4-.1-2.8-.4-4.1H24v7.8h11a9.4 9.4 0 0 1-4.1 6.2v5.1h6.6c3.9-3.6 6.1-8.8 6.1-15z"/>
+                <path fill="#34A853" d="M24 44c5.5 0 10.1-1.8 13.5-4.9l-6.6-5.1c-1.8 1.2-4.1 2-6.9 2-5.3 0-9.8-3.6-11.4-8.4H5.8v5.2A20 20 0 0 0 24 44z"/>
+                <path fill="#FBBC05" d="M12.6 27.6a12 12 0 0 1 0-7.2v-5.2H5.8a20 20 0 0 0 0 17.6z"/>
+                <path fill="#EA4335" d="M24 12c3 0 5.7 1 7.8 3.1l5.9-5.9C34.1 5.9 29.5 4 24 4A20 20 0 0 0 5.8 15.2l6.8 5.2C14.2 15.6 18.7 12 24 12z"/>
+              </svg>
+            </div>
+            <span>Google</span>
+            <small>Search engine</small>
+          </a>
+
+          <a class="app" href="https://www.bing.com/" title="Bing">
+            <div class="app-icon bing">
+              <svg viewBox="0 0 48 48" aria-hidden="true">
+                <path fill="#fff" d="M12 4v27l11 5 13-8-15-9 7-4-16-11zm9 23v9l12-7-12-2zm0 9v8l16-10-4-5-12 7z"/>
+              </svg>
+            </div>
+            <span>Bing</span>
+            <small>Discover more</small>
+          </a>
+
+          <a class="app" href="https://search.brave.com/" title="Brave Search">
+            <div class="app-icon brave">
+              <svg viewBox="0 0 48 48" aria-hidden="true">
+                <path fill="#fff" d="M13 8h22l4 7-3 6 3 8-5 10H14L9 29l3-8-3-6 4-7zm4 5-2 4 3 3-2 8 4 6h8l4-6-2-8 3-3-2-4H17zm2 5h10l-5 4-5-4zm-1 8 6 2 6-2-2 5h-8l-2-5z"/>
+              </svg>
+            </div>
+            <span>Brave</span>
+            <small>Private search</small>
+          </a>
+
+          <a class="app" href="https://www.wikipedia.org/" title="Wikipedia">
+            <div class="app-icon wiki">
+              <svg viewBox="0 0 48 48" aria-hidden="true">
+                <circle cx="24" cy="24" r="20" fill="#fff"/>
+                <text x="24" y="34" text-anchor="middle" font-size="29" font-family="Georgia,serif" fill="#655078">W</text>
+              </svg>
+            </div>
+            <span>Wikipedia</span>
+            <small>Knowledge library</small>
+          </a>
+
+          <button class="app" type="button" id="downloadsApp" title="Downloads">
+            <div class="app-icon downloads">
+              <svg viewBox="0 0 48 48" aria-hidden="true">
+                <path
+                  d="M24 5v23m-9-9 9 9 9-9M9 32v8h30v-8"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+
+            <span>Downloads</span>
+            <small>Your downloaded files</small>
+          </button>
+
+        </div>
+      </section>
+    </section>
+
+    <footer class="taskbar">
+      <button id="powerButton" class="logo-button" title="TharOS menu"
+              aria-label="Open TharOS menu" aria-expanded="false">
+        <!-- <img src="logo.svg" alt="TharOS"> -->
+         <span class="brand-mark">T</span>
+      </button>
+
+      <div class="taskbar-divider"></div>
+
+      <div class="taskbar-label">
+        <span class="taskbar-title">TharOS</span>
+        <span class="taskbar-subtitle">Royal edition</span>
+      </div>
+
+      <div class="taskbar-right">
+        <span class="taskbar-network">
+          <span id="taskbarDot" class="status-dot"></span>
+          <span id="taskbarInternet">Online</span>
+        </span>
+        <div class="taskbar-divider"></div>
+        <span id="taskbarClock">00:00</span>
+      </div>
+    </footer>
+
+    <div id="powerMenu" class="power-menu hidden">
+      <div class="menu-heading">
+        <div class="mini-logo">T</div>
+        <div>
+          <a href="https://tharvesh2026.github.io/"><strong>TharOS</strong></a>
+          <small>Power & session</small>
+        </div>
+      </div>
+
+      <button class="menu-item" id="downloadsButton">
+        <span class="menu-icon">↓</span>
+        <span><strong>Downloads</strong><small>View downloaded files</small></span>
+        <span class="menu-arrow">↗</span>
+      </button>
+
+      <button class="menu-item" id="sleepButton">
+        <span class="menu-icon">☾</span>
+        <span><strong>Sleep</strong><small>Hide the desktop</small></span>
+        <span class="menu-arrow">→</span>
+      </button>
+
+      <div class="menu-separator"></div>
+
+      <button class="menu-item shutdown-item" id="shutdownButton">
+        <span class="menu-icon">⏻</span>
+        <span><strong>Shutdown</strong><small>End this session</small></span>
+        <span class="menu-arrow">→</span>
+      </button>
+    </div>
+
+    <section id="sleepScreen" class="session-screen hidden">
+      <div class="session-logo">T</div>
+      <p class="eyebrow">THAROS · SLEEP MODE</p>
+      <h2>Rest easy.</h2>
+      <p>Your desktop is sleeping.</p>
+      <button id="wakeButton" class="primary-button">Wake up <span>↗</span></button>
+    </section>
+
+    <section id="shutdownScreen" class="session-screen hidden">
+      <div class="session-logo">T</div>
+      <p class="eyebrow">THAROS · SESSION ENDED</p>
+      <h2>Until next time.</h2>
+      <p>TharOS has been shut down for this tab.</p>
+      <button id="restartButton" class="primary-button">Start TharOS <span>↗</span></button>
+    </section>
+  </main>
+</body>
+</html>
